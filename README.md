@@ -7,7 +7,7 @@ This project is a collection of smart contracts with a UI (Dapp) that manages da
 ### Installation
 This project requires [node-js](https://github.com/nodejs/node) runtime
 
-First make sure you have Node.js installed on your device, and then install all of the node-js dependencies of this project
+First make sure you have Node.js installed on your device. In this directory where there's package.json, install all of the node-js dependencies of this project
 
     npm install
 
@@ -17,9 +17,11 @@ Secondly, make sure your browser is Chrome, and install the Ethereum wallet Meta
 
 We created a demo dApp so you can interact and test the smart contracts in a visual environment rather than hacking console scripts.
 
-In the launch a demo server:
+In this directory where there's package.json, launch a demo server:
 
     npm run dev
+    
+Then go to [http://localhost:9000/] and you will see the website.
 
 and uses [truffle](https://github.com/trufflesuite/truffle) as the Ethereum smart contract development framework.
 
