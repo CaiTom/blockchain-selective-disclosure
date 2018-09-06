@@ -5,7 +5,23 @@ This project is a collection of smart contracts with a UI (Dapp) that manages da
 
 
 ### Installation
-This project requires [node-js](https://github.com/nodejs/node) runtime and uses [truffle](https://github.com/trufflesuite/truffle) as the Ethereum smart contract development framework.
+This project requires [node-js](https://github.com/nodejs/node) runtime
+
+First make sure you have Node.js installed on your device, and then install all of the node-js dependencies of this project
+
+    npm install
+
+Secondly, make sure your browser is Chrome, and install the Ethereum wallet MetaMask. Create a MetaMask account if you didn't have one, and then change the network from Main Ethereum Network to Koven Test Network.
+
+### Demo dApp
+
+We created a demo dApp so you can interact and test the smart contracts in a visual environment rather than hacking console scripts.
+
+In the launch a demo server:
+
+    npm run dev
+
+and uses [truffle](https://github.com/trufflesuite/truffle) as the Ethereum smart contract development framework.
 
 In order to run it, install truffle first:
 
@@ -29,16 +45,12 @@ We recommend using popular Ethereum test client [ganache-cli](https://github.com
 
     npm install -g ganache-cli
 
-### Demo dApp
 
-We created a demo dApp so you can interact and test the smart contracts in a visual environment rather than hacking console scripts.
 To run this mode, compile all of the smart contracts first:
 
     truffle compile
 
-... and then launch a demo server:
-
-    npm run dev
+... and then 
 
 ## Contributions
 
