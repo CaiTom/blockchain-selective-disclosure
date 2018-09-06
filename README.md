@@ -23,15 +23,26 @@ In this directory where there's package.json, launch a demo server:
     
 Then go to [http://localhost:9000/](http://localhost:9000/) and you will see the website.
 
-and uses [truffle](https://github.com/trufflesuite/truffle) as the Ethereum smart contract development framework.
+### Proxy re-encryption
+
+In order to use the whole functionality of the website, you need to install the package for AFGH proxy re-encryption. In a new command line
+
+    cd zerodb-afgh-pre-master
+    sudo python setup.py install
+    cd ..
+    
+After successfully install the package, you need to run the proxy re-encryption server
+
+    cd re-encryption
+    node client.js
+    
+### Development of smart contracts
+
+This project uses [truffle](https://github.com/trufflesuite/truffle) as the Ethereum smart contract development framework.
 
 In order to run it, install truffle first:
 
     npm install -g truffle
-
-Then install all of the node-js dependencies
-
-    npm install
 
 Connection to blockchain node is defined in truffle.js:
 
@@ -43,16 +54,19 @@ Connection to blockchain node is defined in truffle.js:
     	}
     }
 
-We recommend using popular Ethereum test client [ganache-cli](https://github.com/trufflesuite/ganache-cli) as a default node:
-
-    npm install -g ganache-cli
-
+We recommend using popular Ethereum test client [ganache-cli](https://github.com/trufflesuite/ganache-cli) as a default node. Download the Ganache UI from the official website and open it. 
 
 To run this mode, compile all of the smart contracts first:
 
     truffle compile
 
-... and then 
+and then deploy the contracts to Ganache:
+
+    truffle migrate
+    
+The test file is in test/ directory. To run the test:
+
+    truffle test
 
 ## Contributions
 
