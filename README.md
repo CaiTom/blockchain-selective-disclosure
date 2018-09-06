@@ -54,7 +54,7 @@ Connection to blockchain node is defined in truffle.js:
     	}
     }
 
-We recommend using popular Ethereum test client [ganache-cli](https://github.com/trufflesuite/ganache-cli) as a default node. Download the Ganache UI from the official website and open it. 
+We recommend using popular Ethereum test client [gGanache](https://github.com/trufflesuite/ganache) as a default node. Download the Ganache UI from the official website and open it. 
 
 To run this mode, compile all of the smart contracts first:
 
