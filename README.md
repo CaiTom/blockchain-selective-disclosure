@@ -21,7 +21,7 @@ In this directory where there's package.json, launch a demo server:
 
     npm run dev
     
-Then go to [http://localhost:9000/] and you will see the website.
+Then go to [http://localhost:9000/](http://localhost:9000/) and you will see the website.
 
 and uses [truffle](https://github.com/trufflesuite/truffle) as the Ethereum smart contract development framework.
 
